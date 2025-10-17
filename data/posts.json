@@ -1,0 +1,41 @@
+{
+  "featuredPost": {
+    "id": "building-modern-web-apps",
+    "title": "Building Modern Web Applications",
+    "excerpt": "Exploring the latest trends and techniques in web development for 2025.",
+    "contentFile": "blog1.html",
+    "readTime": 10,
+    "publishDate": "2025-11-06",
+    "category": "Development",
+    "image": "assets/images/posts/featured.jpg"
+  },
+  "recentPosts": [
+    {
+      "id": "responsive-design",
+      "title": "Responsive Design Mastery",
+      "excerpt": "Learn how to create websites that look great on all devices.",
+      "contentFile": "RecPost.html#responsive",
+      "readTime": 7,
+      "publishDate": "2025-10-15",
+      "category": "Tutorial"
+    },
+    {
+      "id": "css-grid-vs-flexbox",
+      "title": "CSS Grid vs Flexbox",
+      "excerpt": "When to use which layout technique for optimal results.",
+      "contentFile": "RecPost.html#css-grid",
+      "readTime": 5,
+      "publishDate": "2025-10-10",
+      "category": "Tips"
+    },
+    {
+      "id": "web-trends-2025",
+      "title": "Web Development Trends 2025",
+      "excerpt": "Stay ahead with these emerging technologies and practices.",
+      "contentFile": "RecPost.html#trends",
+      "readTime": 8,
+      "publishDate": "2025-10-05",
+      "category": "News"
+    }
+  ]
+}

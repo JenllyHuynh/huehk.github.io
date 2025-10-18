@@ -721,6 +721,13 @@ header {
     line-height: 1.5;
 }
 
+.academic-title {
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius-sm);
+}
+
 .compact-list {
     list-style: none;
     padding-left: 0;

@@ -370,6 +370,45 @@ nav {
         opacity: 0.8;
     }
 }
+.back-to-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.7rem 1.3rem;
+    border-radius: var(--border-radius-sm);
+    background: var(--white);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    border: 2px solid transparent;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.back-to-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: var(--transition-slow);
+}
+
+.back-to-home:hover::before {
+    left: 100%;
+}
+
+.back-to-home:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateX(-5px);
+    border-color: var(--primary);
+}
 
 /*  RESPONSIVE */
 @media (max-width: 768px) {

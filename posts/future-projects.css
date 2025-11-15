@@ -5,12 +5,13 @@
 }
 
 :root {
-    --primary: #4a90e2;
-    --primary-dark: #3a7bc8;
-    --secondary: #6c5ce7;
-    --accent: #fd79a8;
-    --light: #f5f6fa;
-    --dark: #2d3436;
+    --primary: #60B8E8;
+    --primary-dark: #4A9FD0;
+    --secondary: #87CEEB;
+    --accent: #FF6B6B;
+    --accent-light: #FFA07A;
+    --light: #FBFBFB;
+    --dark: #2C3E50;
     --gray: #7f8c8d;
     --white: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -31,8 +32,8 @@ body {
 
 /* HEADER*/
 header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--white);
+    background: linear-gradient(135deg, #60B8E8 0%, #87CEEB 100%);
+    color: var(--dark);
     padding: 0;
     position: fixed;
     width: 100%;
@@ -87,7 +88,7 @@ nav {
 }
 
 .nav-menu a {
-    color: var(--white);
+    color: var(--dark);
     text-decoration: none;
     font-weight: 600;
     display: flex;
@@ -118,10 +119,7 @@ nav {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #2C3E50;
     font-weight: 700;
 }
 
@@ -133,14 +131,15 @@ nav {
 .section-title {
     font-size: 2.2rem;
     margin-bottom: 2rem;
-    color: var(--dark);
+    color: #2C3E50;
+    font-weight: 700;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .section-title i {
-    color: var(--primary);
+    color: #4A90E2;
 }
 
 /* PROJECT CARDS */
@@ -155,7 +154,7 @@ nav {
     background: var(--white);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -319,7 +318,8 @@ nav {
 
 /* FOOTER  */
 .wow-footer {
-    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(90deg, #60B8E8 0%, #87CEEB 100%);
+    color: var(--dark);
     text-align: center;
     padding: 2.5rem 0;
     color: var(--white);
@@ -404,10 +404,10 @@ nav {
 }
 
 .back-to-home:hover {
-    background: var(--primary);
+    background: var(--accent);
     color: var(--white);
     transform: translateX(-5px);
-    border-color: var(--primary);
+    border-color: var(--accent);
 }
 
 /*  RESPONSIVE */

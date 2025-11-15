@@ -117,7 +117,7 @@
 }
 
 .view-all-btn {
-    color: var(--primary);
+    color: #00B894;
     text-decoration: none;
     font-weight: 600;
     display: flex;
@@ -127,7 +127,7 @@
 }
 
 .view-all-btn:hover {
-    color: var(--secondary);
+    color: #00A080;
     transform: translateX(3px);
 }
 

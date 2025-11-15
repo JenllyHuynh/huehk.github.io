@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="myBlog/blog1.css" />
+    <link rel="stylesheet" href="../posts/building-modern-iot.css" />
 </head>
 
 <body>
@@ -19,16 +19,16 @@
     <header>
         <nav>
             <div class="nav-container">
-                <h1 class="logo"><a href="index.html">Blog</a></h1>
+                <h1 class="logo"><a href="../index.html">Blog</a></h1>
                 <div class="hamburger" id="hamburger" aria-hidden="true">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="indexBlog.html"><i class="fas fa-blog"></i> Blog</a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,7 +36,7 @@
 
     <!-- MAIN CONTENT CONTAINER -->
     <main class="iot-blog-container">
-        <a href="indexBlog.html" class="back-to-home">
+        <a href="../blog.html" class="back-to-home">
             <i class="fas fa-arrow-left"></i> Back to Blog
         </a>
         <!-- Hero Section -->
@@ -100,8 +100,9 @@
 
             <p>
                 The initiative was carried out by a team of seven members, with Huệ and Cường serving as the core
-                contributors. The team also benefited from the valuable mentorship and academic guidance of
-                <strong>Hanh H. Nguyen, PhD</strong>, the course instructor for Internet of Things.
+                contributors.
+                The team also benefited from the valuable mentorship and academic guidance of <strong>Ms. Nguyễn Hồng
+                    Hạnh</strong>, the lead lecturer for the Internet of Things course.
             </p>
 
             <p>
@@ -134,17 +135,17 @@
                     <h3><i class="fas fa-chalkboard-teacher"></i> Course Instructor</h3>
                     <h2>Nguyễn Hồng Hạnh</h2>
                     <p class="course-info"><strong>Course:</strong> Internet of Things (IoT102)</p>
-                    <p class="academic-title"><strong>Position:</strong> Course Instructor</p>
+
                     <p class="instructor-desc">
-                        We owe our deepest gratitude to Dr. Nguyen for her invaluable mentorship and support throughout
+                        We owe our deepest gratitude to Ms. Hạnh for her invaluable mentorship and support throughout
                         the development of our IoT project.
-                    </p>
+                    </p><br>
 
                     <p class="instructor-desc">
                         Her deep knowledge in IoT systems, along with her thoughtful guidance in system design and
                         sensor
                         calibration, played a crucial role in our success.
-                    </p>
+                    </p><br>
                     <p class="instructor-desc">
                         Beyond her technical expertise, her dedication and inspiration constantly motivated us to push
                         our boundaries and strive for excellence in this project.
@@ -153,8 +154,9 @@
 
                 <div class="instructor-photo" aria-hidden="true">
                     <figure>
-                        <img src="assets/images/Ms_Hanh.jpg" alt="Nguyen Hong Hanh" />
-                        <figcaption class="photo-caption">Dr. Hanh H. Nguyen, PhD - IoT Course Instructor</figcaption>
+                        <img src="../assets/images/Ms_Hanh.jpg" alt="Nguyen Hong Hanh" />
+                        <figcaption class="photo-caption">Ms. Nguyễn Hồng Hạnh - Internet of Things Lecturer
+                        </figcaption>
                     </figure>
                 </div>
             </div>
@@ -790,12 +792,11 @@ wifiManager->connectToWiFi();</code></pre>
             </ul>
         </section>
 
-        <!-- ======= Manual vs Automated Comparison ======= -->
+         <!-- ======= Manual vs Automated Comparison ======= -->
         <section class="content-section comparison-section">
             <h2><i class="fas fa-balance-scale"></i> Manual vs Automated Comparison</h2>
-            <p class="comparison-intro">After 1 weeks of testing, here's how our automated system compares to
-                traditional manual watering:</p>
-
+            <p class="comparison-intro">After 1 weeks of testing, here's how our automated system compares to traditional manual watering:</p>
+            
             <div class="comparison-table-container">
                 <table class="comparison-table">
                     <thead>
@@ -974,11 +975,11 @@ wifiManager->connectToWiFi();</code></pre>
 
             <div class="demo-gallery">
                 <div class="demo-item">
-                    <img src="assets/images/03.jpg" alt="Hardware Setup" />
+                    <img src="../assets/images/03.jpg" alt="Hardware Setup" />
                     <p>Complete hardware assembly with ESP32, sensors, and pump</p>
                 </div>
                 <div class="demo-item">
-                    <img src="assets/images/02.png" alt="Dashboard" />
+                    <img src="../assets/images/02.png" alt="Dashboard" />
                     <p>Web dashboard showing real-time moisture and controls</p>
                 </div>
             </div>

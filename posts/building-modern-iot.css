@@ -8,13 +8,14 @@
 }
 
 :root {
-    --primary: #4a90e2;
-    --primary-dark: #3a7bc8;
-    --primary-light: #e8f2ff;
-    --secondary: #6c5ce7;
-    --accent: #fd79a8;
-    --light: #f8fafc;
-    --dark: #2d3436;
+    --primary: #60B8E8;
+    --primary-dark: #4A9FD0;
+    --primary-light: #E0F4FF;
+    --secondary: #87CEEB;
+    --accent: #FF6B6B;
+    --accent-light: #FFA07A;
+    --light: #FBFBFB;
+    --dark: #2C3E50;
     --gray: #6f7782;
     --gray-light: #e2e8f0;
     --white: #ffffff;
@@ -65,6 +66,7 @@ body {
 
 /* ---------- Header (Improved) ---------- */
 header {
+    background: linear-gradient(135deg, #60B8E8 0%, #87CEEB 100%);
     position: fixed;
     width: 100%;
     top: 0;
@@ -148,7 +150,7 @@ header {
 }
 
 .nav-menu a {
-    color: var(--white);
+    color: var(--dark);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -382,10 +384,10 @@ header {
 }
 
 .back-to-home:hover {
-    background: var(--primary);
+    background: var(--accent);
     color: var(--white);
     transform: translateX(-5px);
-    border-color: var(--primary);
+    border-color: var(--accent);
 }
 
 /* ---------- Installation/Setup Guide Styles ---------- */
@@ -898,7 +900,7 @@ header {
     align-items: center;
     gap: 0.6rem;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: var(--accent);
     color: var(--white);
     text-decoration: none;
     border-radius: var(--border-radius-sm);
@@ -909,8 +911,8 @@ header {
 
 .diagram-links .btn-link:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
-    background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    background: var(--accent-light);
 }
 
 /* Overview extras */
@@ -2118,7 +2120,8 @@ header {
 
 /* footer */
 .wow-footer {
-    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(90deg, #60B8E8 0%, #87CEEB 100%);
+    color: var(--dark);
     text-align: center;
     padding: 2.5rem 0;
     color: var(--white);

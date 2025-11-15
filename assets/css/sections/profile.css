@@ -173,8 +173,7 @@
 }
 
 .profile-skills .skill-tag {
-    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(74, 144, 226, 0.05));
-    color: var(--primary);
+    color: #2C3E50;
     padding: 0.25rem 0.6rem;
     border-radius: 12px;
     font-size: 0.72rem;
@@ -186,8 +185,8 @@
 }
 
 .profile-skills .skill-tag:hover {
-    background: linear-gradient(135deg, var(--primary), #5b9bf3);
-    color: var(--white);
+    background-color: #4A90E2;
+    color: #FFFFFF;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(74, 144, 226, 0.3);
 }

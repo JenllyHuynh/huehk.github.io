@@ -172,7 +172,7 @@ header {
 }
 
 .blog-card.featured .blog-meta span {
-    color: #7F8C8D;
+    color: #2C3E50;
 }
 
 .blog-card p {
@@ -192,7 +192,7 @@ header {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    color: #7F8C8D;
+    color: #2C3E50;
     font-size: 0.85rem;
     background: #E0E0E0;
     padding: 0.4rem 0.8rem;

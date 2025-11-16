@@ -419,15 +419,15 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #f0f7f4;
+    color: #1ea54c;
     text-decoration: none;
     font-weight: 600;
     padding: 0.7rem 1.3rem;
+    border: 2px solid #1ea54c;
     border-radius: var(--border-radius-sm);
     background: var(--white);
     transition: var(--transition);
     box-shadow: var(--shadow);
-    border: 2px solid transparent;
     margin-bottom: 1.5rem;
     position: relative;
     overflow: hidden;
@@ -2105,7 +2105,6 @@ header {
 
 .btn-link,
 .back-to-home {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     box-shadow: 0 4px 15px rgba(30, 165, 76, 0.3);
 }
 
@@ -2344,7 +2343,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
+    background-image:
         radial-gradient(circle at 15% 50%, rgba(30, 165, 76, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 85% 30%, rgba(38, 166, 154, 0.03) 0%, transparent 50%);
     pointer-events: none;

@@ -1,16 +1,17 @@
 .background {
   padding: 2.5rem;
-  background: linear-gradient(135deg, var(--white) 0%, #f6f8fc 100%);
+  background: linear-gradient(135deg, var(--white) 0%, #f8fbff 100%);
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .background:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .background::before {
@@ -19,10 +20,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, var(--secondary), var(--accent));
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
 }
 
 .background-card {
@@ -54,11 +53,11 @@
 .background p {
   margin-bottom: 1rem;
   line-height: 1.7;
-  color: #333;
+  color: var(--text-muted);
 }
 
 .background p:last-of-type {
   margin-bottom: 0;
   font-style: italic;
-  color: #555;
+  color: var(--gray);
 }

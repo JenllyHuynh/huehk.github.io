@@ -7,16 +7,20 @@
 }
 
 :root {
-    --primary: #4A90E2;
-    --primary-dark: #3A7BC8;
-    --secondary: #7FC8F8;
-    --accent: #FF8C69;
-    --accent-light: #FF7A50;
-    --light: #F5F7F9;
-    --dark: #2C3E50;
-    --gray: #7f8c8d;
+    --primary: #3a7bc8;
+    --primary-dark: #2d5f9e;
+    --primary-light: #87C9FF;
+    --secondary: #6BA8E8;
+    --accent: #ff6b6b;
+    --accent-light: #ff8e8e;
+    --light: #f8fafc;
+    --dark: #2d3436;
+    --gray: #6c757d;
     --white: #ffffff;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --border-color: #e9ecef;
+    --text-muted: #6f7782;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
     --transition: all 0.3s ease;
 }
 
@@ -25,14 +29,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #F5F7F9;
-    color: #2C3E50;
+    background-color: #f5f7fa;
+    color: var(--dark);
 }
 
-/* Header Styles */
+/* Header Styles - Tinh tế hơn */
 header {
-    background: linear-gradient(135deg, #4A90E2 0%, #7FC8F8 100%);
-    color: var(--dark);
+    background: linear-gradient(135deg, #3a7bc8 0%, #6BA8E8 100%);
+    color: var(--white);
     padding: 0;
     position: fixed;
     width: 100%;
@@ -40,6 +44,7 @@ header {
     z-index: 1000;
     transition: var(--transition);
     box-shadow: var(--shadow);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header.scrolled {
@@ -58,17 +63,17 @@ header.scrolled {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--dark);
+    color: var(--white);
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-menu a {
-    color: var(--dark);
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
     display: flex;
@@ -76,45 +81,20 @@ header.scrolled {
     gap: 0.5rem;
     transition: var(--transition);
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
+    opacity: 0.9;
 }
 
 .nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+    opacity: 1;
     transform: translateY(-2px);
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: var(--white);
-    margin: 3px 0;
-    transition: var(--transition);
-    border-radius: 2px;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Main Layout */
 main {
     max-width: 1200px;
-    margin: 80px auto 20px;
+    margin: 100px auto 20px;
     padding: 20px;
     display: grid;
     grid-template-areas:
@@ -125,21 +105,10 @@ main {
     gap: 20px;
 }
 
-.profile {
-    grid-area: profile;
-}
-
-.background {
-    grid-area: background;
-}
-
-.featured-blog {
-    grid-area: featured-blog;
-}
-
-.recent-blog {
-    grid-area: recent-blog;
-}
+.profile { grid-area: profile; }
+.background { grid-area: background; }
+.featured-blog { grid-area: featured-blog; }
+.recent-blog { grid-area: recent-blog; }
 
 section {
     margin-bottom: 0;
@@ -147,23 +116,26 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* footer */
+/* Footer - Tinh tế hơn */
 .wow-footer {
-    background: linear-gradient(90deg, #4A90E2 0%, #7FC8F8 100%);
+    background: linear-gradient(90deg, #3a7bc8 0%, #6BA8E8 100%);
     text-align: center;
     padding: 2.5rem 0;
-    color: var(--dark);
+    color: var(--white);
     margin-top: 3rem;
-    box-shadow: 0 -8px 30px rgba(74, 144, 226, 0.15);
+    box-shadow: 0 -8px 30px rgba(58, 123, 200, 0.15);
     position: relative;
     overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .wow-footer::before {

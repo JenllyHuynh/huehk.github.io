@@ -8,35 +8,45 @@
 }
 
 :root {
-    /* Primary Green Theme */
-    --primary: #22c55e;          /* Lá non */
-    --primary-dark: #15803d;     /* Xanh đậm rễ cây */
-    --primary-light: #dcfce7;    /* Nền xanh nhạt */
-    
-    /* Secondary Accent (Mint → Lime) */
-    --secondary: #2dd4bf;        /* Xanh ngọc cây mát */
-    --accent: #4ade80;           /* Điểm nhấn xanh sáng */
-    --accent-light: #bbf7d0;     /* Nhấn nhạt */
+    /* Primary Green Theme - Darker & Softer */
+    --primary: #1ea54c;
+    /* Xanh lá đậm hơn */
+    --primary-dark: #0f5c2d;
+    /* Xanh rất đậm */
+    --primary-light: #c6f6d5;
+    /* Xanh nhạt nhưng tối hơn */
 
-    /* Backgrounds */
-    --light: #f6fff8;            /* Nền thiên nhiên siêu nhẹ */
-    --gray-light: #e3f5e8;       /* Nền highlight */
+    /* Secondary Accent - Muted Colors */
+    --secondary: #26a69a;
+    /* Xanh ngọc tối hơn */
+    --accent: #38a169;
+    /* Điểm nhấn xanh trầm */
+    --accent-light: #9ae6b4;
+    /* Nhấn nhạt tối hơn */
 
-    /* Text Colors */
-    --dark: #1b3c2d;             /* Chữ xanh rừng đậm */
-    --gray: #6b8f7f;             /* Chữ mô tả xanh nhạt */
+    /* Backgrounds - Darker & Warmer */
+    --light: #f0f7f4;
+    /* Nền xanh nhạt ấm áp */
+    --gray-light: #d1e7dd;
+    /* Nền highlight tối hơn */
+
+    /* Text Colors - Better Contrast */
+    --dark: #1a3226;
+    /* Chữ xanh rừng rất đậm */
+    --gray: #5a7a6b;
+    /* Chữ mô tả tối hơn */
     --white: #ffffff;
 
-    /* State Colors */
-    --success: #16a34a;
-    --warning: #facc15;
-    --error: #dc2626;
+    /* State Colors - Muted */
+    --success: #0d8b3d;
+    --warning: #e6b400;
+    --error: #b91c1c;
 
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 60, 0, 0.08);
-    --shadow: 0 8px 20px rgba(0, 60, 20, 0.10);
-    --shadow-lg: 0 16px 40px rgba(0, 80, 0, 0.18);
-    --card-shadow: 0 10px 28px rgba(0, 70, 0, 0.12);
+    /* Shadows - Deeper & More Natural */
+    --shadow-sm: 0 2px 6px rgba(0, 40, 0, 0.12);
+    --shadow: 0 8px 25px rgba(0, 50, 15, 0.15);
+    --shadow-lg: 0 16px 45px rgba(0, 60, 0, 0.22);
+    --card-shadow: 0 10px 32px rgba(0, 50, 0, 0.16);
 
     /* Border Radii */
     --border-radius: 14px;
@@ -86,9 +96,10 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     color: var(--white);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 4px 25px rgba(0, 60, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
 
@@ -165,7 +176,7 @@ header {
 }
 
 .nav-menu a {
-    color: var(--dark);
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -195,7 +206,7 @@ header {
 }
 
 .nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.12);
     transform: translateY(-2px);
 }
 
@@ -279,15 +290,22 @@ header {
     left: -120px;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(255,255,200,0.55), rgba(255,255,200,0) 70%);
+    background: radial-gradient(circle, rgba(255, 255, 200, 0.55), rgba(255, 255, 200, 0) 70%);
     filter: blur(35px);
     opacity: 0.85;
     animation: sunPulse 5s infinite alternate ease-in-out;
 }
 
 @keyframes sunPulse {
-    0% { opacity: 0.65; transform: scale(1); }
-    100% { opacity: 0.95; transform: scale(1.15); }
+    0% {
+        opacity: 0.65;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.95;
+        transform: scale(1.15);
+    }
 }
 
 /* --- CONTENT AREA --- */
@@ -301,7 +319,7 @@ header {
 .leaf-icon {
     width: 50px;
     height: 50px;
-    background: rgba(255,255,255,0.22);
+    background: rgba(255, 255, 255, 0.22);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -318,7 +336,7 @@ header {
 /* Badge */
 .green-pro-badge {
     padding: 6px 14px;
-    background: rgba(255,255,255,0.22);
+    background: rgba(255, 255, 255, 0.22);
     border-radius: 20px;
     font-size: 13px;
     backdrop-filter: blur(3px);
@@ -401,7 +419,7 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary);
+    color: #f0f7f4;
     text-decoration: none;
     font-weight: 600;
     padding: 0.7rem 1.3rem;
@@ -845,6 +863,7 @@ header {
     margin-bottom: 1.3rem;
     padding: 0 0.5rem;
 }
+
 .conclusion-section ul {
     background: var(--white);
     padding: 1.5rem 1.5rem 1.5rem 2.5rem;
@@ -1342,7 +1361,7 @@ header {
 }
 
 .code-block {
-    background: var(--dark);
+    background: linear-gradient(135deg, #1a1f2e, #1e2538);
     color: var(--light);
     padding: 1rem;
     border-radius: var(--border-radius-sm);
@@ -1351,7 +1370,8 @@ header {
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
     line-height: 1.4;
-    border: 1px solid #374151;
+    border: 1px solid #2d3748;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .code-block code {
@@ -1837,6 +1857,7 @@ header {
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+
 /* Manual vs Automated  */
 .comparison-intro {
     text-align: center;
@@ -1861,7 +1882,7 @@ header {
 }
 
 .comparison-table th {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     color: var(--white);
     padding: 1.2rem;
     text-align: center;
@@ -1876,7 +1897,7 @@ header {
 }
 
 .comparison-table td:first-child {
-    background: var(--light);
+    background: linear-gradient(135deg, #f0f7f4, #e8f5ee);
     font-weight: 600;
     color: var(--primary-dark);
     border-right: 1px solid var(--gray-light);
@@ -1893,7 +1914,8 @@ header {
     font-size: 1.5rem;
 }
 
-.manual-cell, .auto-cell {
+.manual-cell,
+.auto-cell {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2081,6 +2103,18 @@ header {
     transition: var(--transition-slow);
 }
 
+.btn-link,
+.back-to-home {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    box-shadow: 0 4px 15px rgba(30, 165, 76, 0.3);
+}
+
+.btn-link:hover,
+.back-to-home:hover {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    box-shadow: 0 6px 20px rgba(30, 165, 76, 0.4);
+}
+
 .btn-link:hover::before {
     left: 100%;
 }
@@ -2172,7 +2206,8 @@ header {
     text-align: center;
     padding: 2.5rem 0;
     margin-top: 3rem;
-    box-shadow: 0 -8px 30px rgba(20, 80, 40, 0.18);
+    box-shadow: 0 -8px 35px rgba(20, 60, 30, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -2184,7 +2219,7 @@ header {
     left: -60px;
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(255,255,180,0.35), transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 180, 0.35), transparent 70%);
     filter: blur(30px);
     opacity: 0.9;
 }
@@ -2243,6 +2278,84 @@ header {
 .improvement-content p {
     color: var(--gray);
     margin-top: 0.5rem;
+}
+
+/* ---------- Background Improvements ---------- */
+body {
+    background: linear-gradient(135deg, #f0f7f4 0%, #e8f5ee 100%);
+}
+
+.content-section {
+    background: linear-gradient(135deg, #ffffff 0%, #fafdfb 100%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-box,
+.component-item,
+.metric-card,
+.arch-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fcf9 100%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Darker hero section */
+.hero-green-pro {
+    background: linear-gradient(135deg, #0b9c8d 0%, #4ac44d 60%, #9ed86b 100%);
+}
+
+/* Improved card shadows with depth */
+.info-box:hover,
+.component-item:hover,
+.metric-card:hover {
+    box-shadow: 0 12px 35px rgba(0, 60, 0, 0.18);
+}
+
+/* Better contrast for text */
+.content-section h2 {
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.content-section h3 {
+    color: var(--primary-dark);
+}
+
+/* ---------- Depth & Dimension Effects ---------- */
+.content-section {
+    position: relative;
+}
+
+.content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+    opacity: 0.6;
+}
+
+/* Subtle texture overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(30, 165, 76, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(38, 166, 154, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Improved focus states for accessibility */
+*:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px rgba(30, 165, 76, 0.1);
 }
 
 /* Small screens  */
@@ -2384,31 +2497,33 @@ header {
     .memory-diagram {
         padding: 1rem;
     }
-     .prerequisite-card {
+
+    .prerequisite-card {
         padding: 1.2rem;
     }
-    
+
     .step-content {
         padding: 1.2rem;
     }
-    
+
     .libraries-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .warning-box {
         padding: 1.2rem;
     }
+
     .comparison-table-container {
         margin: 1rem 0;
     }
-    
+
     .comparison-table th,
     .comparison-table td {
         padding: 0.6rem;
         font-size: 0.8rem;
     }
-    
+
     .takeaway-card {
         padding: 1.2rem;
     }
@@ -2471,56 +2586,58 @@ header {
     .memory-heap {
         min-width: 150px;
     }
-     .prerequisites-grid {
+
+    .prerequisites-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .step {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .step-number {
         align-self: flex-start;
     }
-    
+
     .setup-flow {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .flow-arrow {
         transform: rotate(90deg);
     }
-    
+
     .tips-grid {
         grid-template-columns: 1fr;
     }
-     .comparison-table th,
+
+    .comparison-table th,
     .comparison-table td {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
-    
+
     .method-header {
         flex-direction: row;
         justify-content: center;
         gap: 0.3rem;
     }
-    
+
     .method-header i {
         font-size: 1.2rem;
     }
-    
+
     .value {
         font-size: 0.85rem;
     }
-    
+
     .badge {
         font-size: 0.7rem;
         padding: 0.2rem 0.6rem;
     }
-    
+
     .takeaways-grid {
         grid-template-columns: 1fr;
     }
